@@ -124,9 +124,23 @@
 					event.stopPropagation();
 					event.preventDefault();
 
+					// Tracking Event
+						var name = document.getElementById('#name');
+						var email = document.getElementById('#email');
+						var ic = document.getElementById('#ic');
+
+						analytics.identify(email, {
+							name: name,
+							email: email,
+							id: ic
+						})
+
+						analytics.track("Opted-In", {
+							method: "landing page"
+						})
+
 					// Disable submit.
 						$submit.disabled = true;
-
 
 					// Process form.
 						var http = new XMLHttpRequest();
