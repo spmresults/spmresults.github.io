@@ -1208,3 +1208,12 @@
 			}
 
 		}
+
+		body.privacy {
+			display: block;
+			padding: 20px;
+		}
+
+		div.text-black {
+			color: black;
+		}
