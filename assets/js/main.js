@@ -125,9 +125,9 @@
 					event.preventDefault();
 
 					// Tracking Event
-						var name = document.getElementById('#name');
-						var email = document.getElementById('#email');
-						var ic = document.getElementById('#ic');
+						var name = document.getElementById('#name').value;
+						var email = document.getElementById('#email').value;
+						var ic = document.getElementById('#ic').value;
 
 						analytics.identify(email, {
 							name: name,
