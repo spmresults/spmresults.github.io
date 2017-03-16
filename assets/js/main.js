@@ -189,6 +189,8 @@
 
 									$message._show('success', 'Thank you!');
 
+									window.open('https://sppat.moe.gov.my/semakan', '_blank' );
+
 
 							} else if (http.readyState != 4 && http.status >= 400) {
 								// Enable submit.
